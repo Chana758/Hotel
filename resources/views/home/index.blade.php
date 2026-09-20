@@ -1,41 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      @include('home.css')
-   </head>
-   <!-- body -->
-   <body class="main-layout">
-      <!-- loader  -->
-      <div class="loader_bg">
-         <div class="loader"><img src="images/loading.gif" alt="#"/></div>
-      </div>
-      <!-- end loader -->
-      <!-- header -->
-      <header>
-         <!-- header inner -->
-         @include('home.header')
-      </header>
-      <!-- end header inner -->
-      <!-- end header -->
-      <!-- banner -->
-      @include('home.slider')
-      <!-- end banner -->
-      <!-- about -->
-      @include('home.about')
-      <!-- end about -->
-      <!-- our_room -->
-      @include('home.ourroom')
-      <!-- end our_room -->
-      <!-- gallery -->
-      @include('home.gallery')
-      <!-- end gallery -->
-      <!-- blog -->
-      {{-- @include('home.blog') --}}
-      <!-- end blog -->
-      <!--  contact -->
-      @include('home.contact')
-      <!-- end contact -->
-      <!--  footer -->
-     @include('home.footer')
-   </body>
+<head>
+    @include('home.css')
+</head>
+<body class="main-layout">
+
+    {{-- Page loader --}}
+    <div class="loader_bg">
+        <div class="loader"><img src="{{ asset('images/loading.gif') }}" alt="Loading"></div>
+    </div>
+
+    <header>
+        @include('home.header')
+    </header>
+
+    @include('home.slider')      {{-- Banner + quick booking --}}
+    @include('home.about')       {{-- About us --}}
+    @include('home.ourroom')     {{-- Rooms --}}
+    @include('home.gallery')     {{-- Gallery --}}
+    {{-- @include('home.blog') --}}
+    @include('home.contact')     {{-- Contact form + map --}}
+    @include('home.footer')
+
+</body>
 </html>

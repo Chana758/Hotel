@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      @include('home.css') {{-- ហៅ CSS មកកុំឱ្យខូចរាង --}}
-   </head>
-   <body class="main-layout">
-      <header>
-         @include('home.header') {{-- ហៅ Header មកឱ្យមានប៊ូតុង Login --}}
-      </header>
+<html lang="en">
+<head>
+    @include('home.css')
+</head>
+<body class="main-layout">
+    <header>
+        @include('home.header')
+    </header>
 
-      @include('home.ourroom') {{-- ហៅសាច់កូដ About ដែលមេមានស្រាប់ --}}
+    @include('home.ourroom')
 
-      @include('home.footer')
-   </body>
+    @include('home.footer')
+</body>
 </html>
