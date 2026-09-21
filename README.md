@@ -37,7 +37,7 @@ A full-stack hotel booking website built with **Laravel 10**, Jetstream and Live
 |-------|-----------|
 | Backend | Laravel 10, PHP 8.3 |
 | Auth | Laravel Jetstream, Livewire |
-| Frontend | Blade, Vite, Tailwind CSS |
+| Frontend | Blade, Vite, Tailwind CSS (auth pages), Bootstrap (public site) |
 | Database | TiDB Cloud (MySQL compatible) |
 | Deployment | Docker on Render |
 
